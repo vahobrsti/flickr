@@ -4,7 +4,14 @@
         <input type="submit" value="submit">
         <% end %>
 <div>
+  <% unless @recent_searches.empty?%>
+      <p style="color: orangered">Recent Searches</p>
+       <%@recent_searches.each do |recent_search|  %>
+          <p><%= recent_search.phrase %></p>
+          <% end %>
 
+
+<% end %>
   <% unless flash.empty? %>
       <p>Something went wrong</p>
   <% flash.each do |key, value| %>
@@ -15,7 +22,7 @@
     <% if @results %>
 
         <% @results.each do |result| %>
-            <a target='_blank' href="<%= (defined?(result.url_l)) ? result.url_l : (defined? result.url_z ? result.url_z : result.url_t) %>"><img src="<%= result.url_t %>" alt="<%= result.title %>"> </a>
+            <a target='_blank' href="<%= (defined? result.url_l) ? result.url_l : result.url_t %>"><img src="<%= result.url_t %>" alt="<%= result.title %>"> </a>
     <%end %>
 
         <% if @pages > 1
