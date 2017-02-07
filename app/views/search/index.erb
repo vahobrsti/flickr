@@ -6,12 +6,12 @@
 
     <% unless @query.nil? %>
     <% @results.each do |result| %>
-            <a target='_blank' href="<%= result.url_z %>"><img src="<%= result.url_t %>" alt="<%= result.title %>"> </a>
+            <a target='_blank' href="<%= (defined?(result.url_l)) ? result.url_l : (defined? result.url_z ? result.url_z : result.url_t) %>"><img src="<%= result.url_t %>" alt="<%= result.title %>"> </a>
     <%end %>
 
         <% if @pages > 1
              i=1
-             while i<= @total
+             while i<= @pages
         %>
                 <a href="/?q=<%= @query %>&page=<%= i %>"><%= i %></a>
         <% i+=1 %>

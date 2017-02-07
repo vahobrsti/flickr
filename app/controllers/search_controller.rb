@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   include FlickrGateway
-  caches_page :index
+  #caches_page :index
   before_action :authenticate_user!
   def index
     @search = Search.new
@@ -11,7 +11,7 @@ class SearchController < ApplicationController
       # connect to api and conduct search
       flickr_model = API.new 'c8fa5aa1fe4e498417bedeae59c47636' , '2db20ef953404fdb'
       per_page = 5
-      extras='url_t, url_z'
+      extras='url_t, url_z , url_l'
       page = @page || 1
       @results = flickr_model.search_images @query, per_page,extras, page
       # abort @results.inspect
