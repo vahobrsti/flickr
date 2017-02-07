@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   include FlickrGateway
-  #caches_page :index
+  caches_page :index
   before_action :authenticate_user!
   before_action :api_result, only: [:index]
   before_action :recent_searches, only: [:index]
