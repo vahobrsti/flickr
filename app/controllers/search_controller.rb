@@ -30,7 +30,8 @@ class SearchController < ApplicationController
       @results = flickr_model.search_images @query, per_page, extras, page
       unless @results
         # got error
-        flash[:message]=flickr_model.error.message
+        flash[:message] = flickr_model.error.message
+        false
       end
   end
 end
