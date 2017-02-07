@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I used ROR as the main framework and postgres as the database engines. 
 
-Things you may want to cover:
+Upcoming: 
 
-* Ruby version
+I need to add a caching system to this application to make it fast and speedy. 
+# How to run it: 
 
-* System dependencies
+You need to have Ruby and postgres installed and cofigured. This version is still in development. Will be pushed for Herokou in production.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
