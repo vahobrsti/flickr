@@ -3,9 +3,18 @@
         <input type="text" name="q" value="<%= @query %>">
         <input type="submit" value="submit">
         <% end %>
+<div>
 
-    <% unless @query.nil? %>
-    <% @results.each do |result| %>
+  <% unless flash.empty? %>
+      <p>Something went wrong</p>
+  <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "flash #{key}" %>
+  <% end %>
+      <% end %>
+</div>
+    <% if @results %>
+
+        <% @results.each do |result| %>
             <a target='_blank' href="<%= (defined?(result.url_l)) ? result.url_l : (defined? result.url_z ? result.url_z : result.url_t) %>"><img src="<%= result.url_t %>" alt="<%= result.title %>"> </a>
     <%end %>
 
