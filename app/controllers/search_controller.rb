@@ -10,7 +10,7 @@ class SearchController < ApplicationController
     @recent_searches = current_user.searches.last(10).reverse
     unless @query.nil? || @query.empty?
       # connect to api and conduct search
-      flickr_model = API.new '' , ''
+      flickr_model = API.new 'c8fa5aa1fe4e498417bedeae59c47636' , '2db20ef953404fdb'
       per_page = 5
       extras='url_t, url_l'
       page = @page || 1
