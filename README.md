@@ -38,4 +38,7 @@ As for TDD, there is a small scenario which Fails and it is incomplete.
 
 1) Caching using RAM instead of file. Redis and Memcached are good candidates. 
 
-2) Having a complete set of TDD tests which is a great help while you are doing refactoring; It's a great documentation for your code. 
+2) Having a complete set of TDD tests which is a great help while you are doing refactoring; It's a great documentation for your code.
+ 
+ 3) Flickr is applying some restriction on the non-commercial api and sometimes, I ran into the problem that they would not pass the url to large size. If this were to be used in production, it is required to have a commercial api with Flickr. 
+ 
