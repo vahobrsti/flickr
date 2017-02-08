@@ -6,8 +6,7 @@ Also, in case one needs to take advantage of advanced concepts in programming li
 
 As for database engine, I have chosen to use postgres although in this special case MySQL and or even SQLite is enough because this application is a very small application. Likewise to ROR, the community support and its robustness is my reason to choose postgres.
 
-
-
+For testing, I used Rspec and you can find all tests in <code> spec </code> folder. 
 # How to run it:
 
 Perquisites: 
