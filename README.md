@@ -4,7 +4,7 @@ I used Ruby on Rails 5.0 as the main framework and postgres as the database engi
 
 Also, in case one needs to take advantage of advanced concepts in programming like concurrency, this framework still is good and mature enough.
 
-As for database engine, I have choosen to use postgres although in this special case MySQL and or even Sqlite is enough because this application is a very small application. Likewise to ROR, the community support and its robustness is my reason to choose postgres.
+As for database engine, I have chosen to use postgres although in this special case MySQL and or even SQLite is enough because this application is a very small application. Likewise to ROR, the community support and its robustness is my reason to choose postgres.
 
 
 
@@ -38,7 +38,5 @@ As for TDD, there is a small scenario which Fails and it is incomplete.
 
 1) Caching using RAM instead of file. Redis and Memcached are good candidates. 
 
-2) Having a complete set of TDD tests which is a great help while you are doing refactoring; It's a great documentation for your code.
- 
- 3) Flickr is applying some restriction on the non-commercial api and sometimes, I ran into the problem that they would not pass the url to large size. If this were to be used in production, it is required to have a commercial api with Flickr. 
+2) Flickr is applying some restriction on the non-commercial api and sometimes, I ran into the problem that they would not pass the url to large size. If this were to be used in production, it is required to have a commercial api with Flickr. 
  
