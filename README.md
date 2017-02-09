@@ -40,5 +40,6 @@ As for TDD, there is a small scenario which Fails and it is incomplete.
  2) Flickr is applying some restriction on the non-commercial api and sometimes, I ran into the problem that they would not pass the url to large size. If this were to be used in production, it is required to have a commercial api with Flickr. 
 
  3) Write more tests although I believe for such a small app I wrote enough.
+ 
  4) This project needs some front end jobs for sure. I have not used any design.
  For listing the search results, I imagine take the google approach to show the search result in max 10 page is good and makes sense. However, I have not implemented in that way. 
