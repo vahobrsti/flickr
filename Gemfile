@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #authentication
-gem 'devise'
+#gem 'devise'
 gem 'actionpack-page_caching'
 gem 'flickraw'
 gem 'flickraw-cached'
